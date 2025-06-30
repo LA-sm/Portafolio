@@ -1,0 +1,15 @@
+create or replace TRIGGER trg_borrar_grupo
+BEFORE DELETE ON GRUPO FOR EACH ROW
+BEGIN
+    -- Primero borrar los gastos asociados a los participantes del grupo
+    DELETE FROM gasto
+    WHERE participante_id_pagador IN (
+        SELECT participante_id
+        FROM participante
+        WHERE grupo_id = :OLD.grupo_id
+    );
+
+    -- Luego borrar los participantes del grupo
+    DELETE FROM participante
+    WHERE grupo_id = :OLD.grupo_id;
+END;

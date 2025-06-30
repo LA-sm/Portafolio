@@ -1,0 +1,8 @@
+create or replace TRIGGER trg_borrar_usuario
+BEFORE DELETE ON USUARIO FOR EACH ROW
+BEGIN
+
+    DELETE FROM grupo
+    WHERE user_id_creador = :OLD.user_id;
+
+END;

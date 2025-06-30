@@ -1,0 +1,103 @@
+/*usuario*/
+insert into usuario(user_id, alias, email, password, telefono)
+values(1, 'Helen', 'helen@gmail.com', '$2a$10$.4v/kT2.aTZv0TF5/DWR9OmWQOxNN9gY4OKTaH/HQBGMj0RIuTg4.', '002838238');
+insert into usuario(user_id, alias, email, password, telefono)
+values(2, 'Ale', 'ale@gmail.com', '$2a$10$z.p1KaQVYdgCnQgp3WBiiuq36Syu4ymjBkLllPmTCowcpiF5WQLwC', '988894646');
+insert into usuario(user_id, alias, email, password, telefono)
+values(3, 'Pepito', 'pepito@gmail.com', '$2a$10$XDjrG3B5NuDd5s03OYyiX.0qPAMh9.d8dXAZfUq2/lTpfQVrB7IXe', '552342557');
+insert into usuario(user_id, alias, email, password, telefono)
+values(4, 'Carlos', 'carlos@gmail.com', '$2a$10$5uvDwr7ZDzjlm99awDYpxOibIJEgjbzm3u.IhKaPRVfrv1reOkH7e', '645645643');
+insert into usuario(user_id, alias, email, password, telefono)
+values(5, 'Juan', 'juan@gmail.com', '$2a$10$E4t3VwWueGNQZlRJYLO55.EtTVG37VGHMQ82EGGAb6JDFx4WSlOBa', '332382876');
+
+/*grupo*/
+insert into grupo(grupo_id, fecha_creacion, nombre, user_id_creador) 
+values(1, '03/06/25', 'Viaje a Tenerife', 1);
+insert into grupo(grupo_id, fecha_creacion, nombre, user_id_creador) 
+values(2, '03/06/25', 'Viaje a Francia', 1);
+insert into grupo(grupo_id, fecha_creacion, nombre, user_id_creador) 
+values(3, '03/06/25', 'Viaje a Italia', 1);
+insert into grupo(grupo_id, fecha_creacion, nombre, user_id_creador) 
+values(4, '03/06/25', 'Viaje a Cuba', 1);
+insert into grupo(grupo_id, fecha_creacion, nombre, user_id_creador) 
+values(5, '03/06/25', 'Casa rural', 1);
+
+/*participante*/
+insert into participante(participante_id, alias, grupo_id)
+values(1, 'Ale', 1);
+insert into participante(participante_id, alias, grupo_id)
+values(2, 'roberto', 1);
+insert into participante(participante_id, alias, grupo_id)
+values(3, 'pepe', 1);
+
+insert into participante(participante_id, alias, grupo_id)
+values(4, 'Pepito', 2);
+insert into participante(participante_id, alias, grupo_id)
+values(5, 'Michar', 2);
+insert into participante(participante_id, alias, grupo_id)
+values(6, 'Ronaldo', 2);
+
+insert into participante(participante_id, alias, grupo_id)
+values(7, 'Helen', 3);
+insert into participante(participante_id, alias, grupo_id)
+values(8, 'Juan', 3);
+
+insert into participante(participante_id, alias, grupo_id)
+values(9, 'Juan', 4);
+insert into participante(participante_id, alias, grupo_id)
+values(10, 'Pedrito', 4);
+
+insert into participante(participante_id, alias, grupo_id)
+values(11, 'Carlos', 5);
+insert into participante(participante_id, alias, grupo_id)
+values(12, 'Gabriel', 5);
+
+
+/*gasto*/
+insert into gasto(gasto_id, fecha, descripcion, importe_total, participante_id_pagador)
+values(1, '28/06/25', 'pasajes', 450, 1);
+insert into gasto(gasto_id, fecha, descripcion, importe_total, participante_id_pagador)
+values(2, '28/06/25', 'bebida', 50, 2);
+insert into gasto(gasto_id, fecha, descripcion, importe_total, participante_id_pagador)
+values(3, '30/06/25', 'comida', 60, 3);
+
+insert into gasto(gasto_id, fecha, descripcion, importe_total, participante_id_pagador)
+values(4, '25/06/25', 'cena', 60, 4);
+
+
+/*distribucion_gasto*/
+
+/*pasaje*/
+insert into distribucion_gasto(distribucion_id, cantidad_debida, participante_id, gasto_id)
+values(1, 150, 1, 1);
+insert into distribucion_gasto(distribucion_id, cantidad_debida, participante_id, gasto_id)
+values(2, 150, 2, 1);
+insert into distribucion_gasto(distribucion_id, cantidad_debida, participante_id, gasto_id)
+values(3, 150, 3, 1);
+
+
+/*bebida*/
+insert into distribucion_gasto(distribucion_id, cantidad_debida, participante_id, gasto_id)
+values(4, 25, 1, 2);
+insert into distribucion_gasto(distribucion_id, cantidad_debida, participante_id, gasto_id)
+values(5, 25, 2, 2);
+
+
+/*comida*/
+insert into distribucion_gasto(distribucion_id, cantidad_debida, participante_id, gasto_id)
+values(6, 20, 1, 3);
+insert into distribucion_gasto(distribucion_id, cantidad_debida, participante_id, gasto_id)
+values(7, 20, 2, 3);
+insert into distribucion_gasto(distribucion_id, cantidad_debida, participante_id, gasto_id)
+values(8, 20, 3, 3);
+
+
+/*cena*/
+insert into distribucion_gasto(distribucion_id, cantidad_debida, participante_id, gasto_id)
+values(9, 20, 4, 4);
+insert into distribucion_gasto(distribucion_id, cantidad_debida, participante_id, gasto_id)
+values(10, 20, 5, 4);
+insert into distribucion_gasto(distribucion_id, cantidad_debida, participante_id, gasto_id)
+values(11, 20, 6, 4);
+
+
