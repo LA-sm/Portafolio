@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio DAM - Tu Nombre</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #f5f7fa;
+      color: #333;
+    }
+
+    header {
+      background-color: #1e3a8a;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #0f172a;
+      display: flex;
+      justify-content: center;
+      padding: 0.5rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+
+    h2 {
+      color: #1e3a8a;
+      border-bottom: 2px solid #1e3a8a;
+      padding-bottom: 0.5rem;
+    }
+
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      margin-bottom: 1rem;
+    }
+
+    .video-container iframe, .video-container video {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+
+    img {
+      width: 100%;
+      max-width: 800px;
+      margin: 1rem 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    .links a {
+      display: inline-block;
+      margin: 0.5rem 1rem 0.5rem 0;
+      background-color: #f97316;
+      color: white;
+      text-decoration: none;
+      padding: 0.6rem 1.2rem;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .links a:hover {
+      background-color: #ea580c;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #1e3a8a;
+      color: white;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Portafolio - Luis Alejandro</h1>
+    <p>Desarrollador de Aplicaciones Multiplataforma</p>
+  </header>
+
+  <nav>
+    <a href="#proyecto">Proyectos</a>
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <!-- Sección Proyecto -->
+  <section id="proyecto">
+    <h2>Billsapp: Aplicación de gestión de gastos en grupo</h2>
+
+    <!-- Video embebido desde YouTube -->
+    <!-- Sustituye VIDEO_ID por el ID de tu video en YouTube -->
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/5lZOsInTm3U" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+
+    <!-- Imagen del modelo relacional -->
+    <!-- Reemplaza "modelo.png" por la ruta a tu imagen -->
+    <h3>Modelo Relacional</h3>
+    <img src="https://la-sm.github.io/Portafolio/Datamodeler.png" alt="Modelo Relacional de la base de datos" />
+
+    <!-- Imagen de arquitectura -->
+    <!-- Reemplaza "arquitectura.png" por la ruta a tu imagen -->
+    <h3>Arquitectura del Sistema</h3>
+    <img src="https://la-sm.github.io/Portafolio/Arquitectura.png" alt="Arquitectura de la aplicación" />
+  
+
+    <!-- Enlaces a repositorios -->
+    <div class="links">
+      <!-- Reemplaza los href con tus enlaces reales de GitHub -->
+      <a href="https://la-sm.github.io/Portafolio/Cliente_Billsapp.zip" download>Cliente de Comunicaciones</a>
+      <a href="https://la-sm.github.io/Portafolio/Servidor_Comunicaciones.zip" download>Servidor</a>
+      <a href="https://la-sm.github.io/Portafolio/Scripts.zip" download>Scripts de Base de Datos</a>
+
+    </div>
+  </section>
+
+  <!-- Sección Sobre mí -->
+  <section id="sobre-mi">
+    <h2>Sobre mí</h2>
+    <p>
+      Soy desarrollador de aplicaciones multiplataforma. Durante mi formación, he adquirido conocimientos sólidos en programación orientada a objetos, bases de datos, desarrollo web y móvil, así como en herramientas y lenguajes como Java, Kotlin, SQL, HTML/CSS, JavaScript, Angular, Spring y Git. Además, he tenido la oportunidad de aplicar estos conocimientos en un proyecto final y en mis prácticas formativas.
+    </p>
+
+    <!-- Enlace a tu curriculum -->
+    <!-- Reemplaza "cv.pdf" con el nombre de tu archivo de currículum -->
+    <div class="links">
+      <a href="https://la-sm.github.io/Portafolio/CV Luis Alejandro.pdf" target="_blank">Ver mi currículum</a>
+    </div>
+  </section>
+
+  <!-- Sección Contacto -->
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>Puedes escribirme a: <strong>luis.alejandro.martinez.fdez@gmail.com</strong></p>
+    <p>Llamarme al: <strong>621 078 312</strong></p>
+    <p>O encontrarme en LinkedIn: <a href="https://www.linkedin.com/in/luis-alejandro-martínez-fernández" target="_blank">www.linkedin.com/in/luis-alejandro-martínez-fernández</a></p>
+  </section>
+
+  <footer>
+    &copy; 2025 Luis Alejandro - Todos los derechos reservados
+  </footer>
+</body>
+</html>
